@@ -4,7 +4,7 @@
     <string name="app_name">ImageBlurring</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-<string name="title_activity_main">Tricky bluring</string>
- 
+    <string name="title_activity_main">Tricky bluring</string>
+
 
 </resources>

@@ -70,10 +70,10 @@ public class FastBlurFragment extends Fragment {
             radius = 2;
         }
 
-        Bitmap overlay = Bitmap.createBitmap((int) (view.getMeasuredWidth()/scaleFactor),
-                (int) (view.getMeasuredHeight()/scaleFactor), Bitmap.Config.ARGB_8888);
+        Bitmap overlay = Bitmap.createBitmap((int) (view.getMeasuredWidth() / scaleFactor),
+                (int) (view.getMeasuredHeight() / scaleFactor), Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(overlay);
-        canvas.translate(-view.getLeft()/scaleFactor, -view.getTop()/scaleFactor);
+        canvas.translate(-view.getLeft() / scaleFactor, -view.getTop() / scaleFactor);
         canvas.scale(1 / scaleFactor, 1 / scaleFactor);
         Paint paint = new Paint();
         paint.setFlags(Paint.FILTER_BITMAP_FLAG);

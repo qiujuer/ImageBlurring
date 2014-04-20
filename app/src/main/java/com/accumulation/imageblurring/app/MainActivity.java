@@ -1,7 +1,6 @@
 package com.accumulation.imageblurring.app;
 
 import android.app.ActionBar;
-import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,13 +8,10 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.view.Menu;
-import android.view.MenuItem;
 
 import com.accumulation.imageblurring.app.fragments.FastBlurFragment;
 import com.accumulation.imageblurring.app.fragments.JniBlurArrayFragment;
 import com.accumulation.imageblurring.app.fragments.JniBlurBitMapFragment;
-import com.accumulation.imageblurring.app.fragments.RSBlurFragment;
 import com.accumulation.imageblurring.app.util.ZoomOutPageTransformer;
 
 import java.util.ArrayList;

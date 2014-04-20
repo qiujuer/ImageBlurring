@@ -26,7 +26,7 @@ public class FastBlur {
         int[] pix = new int[w * h];
         bitmap.getPixels(pix, 0, w, 0, 0, w, h);
         //Jni 数组计算
-        pix = ImageBlur.blurIntArray(pix,w,h,radius);
+        ImageBlur.blurIntArray(pix, w, h, radius);
 
         bitmap.setPixels(pix, 0, w, 0, 0, w, h);
         return (bitmap);
@@ -44,7 +44,7 @@ public class FastBlur {
             return (null);
         }
         //Jni BitMap
-        ImageBlur.blurBitMap(bitmap,radius);
+        ImageBlur.blurBitMap(bitmap, radius);
 
         return (bitmap);
     }

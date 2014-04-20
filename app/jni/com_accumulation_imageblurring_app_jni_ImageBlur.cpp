@@ -1,28 +1,28 @@
 #include <com_accumulation_imageblurring_app_jni_ImageBlur.h>
-#include <ImageBlur.cpp>
+#include <ImageBlur.c>
 #include <android/log.h>
 #include <android/bitmap.h>
 
 
-JNIEXPORT jintArray JNICALL Java_com_accumulation_imageblurring_app_jni_ImageBlur_blurIntArray
-(JNIEnv *env, jobject obj, jintArray arrIn, jint w, jint h, jint r)
+JNIEXPORT void JNICALL Java_com_accumulation_imageblurring_app_jni_ImageBlur_blurIntArray
+(JNIEnv *env, jclass obj, jintArray arrIn, jint w, jint h, jint r)
 {
 	jint *pix;
-	pix = env->GetIntArrayElements(arrIn, NULL);
+	pix = env->GetIntArrayElements(arrIn, 0);
 	if (pix == NULL)
-		return NULL;
+		return;
 	//Start
 	pix = StackBlur(pix, w, h, r);
 	//End
-	int size = w * h;
-	jintArray result = env->NewIntArray(size);
-	env->SetIntArrayRegion(result, 0, size, pix);
+	//int size = w * h;
+	//jintArray result = env->NewIntArray(size);
+	//env->SetIntArrayRegion(result, 0, size, pix);
 	env->ReleaseIntArrayElements(arrIn, pix, 0);
-	return result;
+	//return result;
 }
 
 JNIEXPORT void JNICALL Java_com_accumulation_imageblurring_app_jni_ImageBlur_blurBitMap
-(JNIEnv *env, jobject obj, jobject bitmapIn, jint r)
+(JNIEnv *env, jclass obj, jobject bitmapIn, jint r)
 {
 	AndroidBitmapInfo infoIn;
 	void* pixelsIn;
