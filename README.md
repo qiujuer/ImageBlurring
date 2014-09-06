@@ -9,3 +9,6 @@ ImageBlurring
 oschina：http://www.oschina.net/question/1377710_151988
 
 CSDN：http://blog.csdn.net/qiujuer/article/details/24282047
+
+
+后期优化已集成到项目：https://github.com/qiujuer/Genius-Android
