@@ -122,7 +122,7 @@ public class RSBlurFragment extends Fragment {
         downScale = new CheckBox(getActivity());
         ViewGroup.LayoutParams lp = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
         downScale.setLayoutParams(lp);
-        downScale.setText("Downscale before blur");
+        downScale.setText("模糊前压缩图片");
         downScale.setVisibility(View.VISIBLE);
         downScale.setTextColor(0xFFFFFFFF);
         downScale.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

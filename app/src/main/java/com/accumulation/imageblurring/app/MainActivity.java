@@ -80,7 +80,7 @@ public class MainActivity extends FragmentActivity {
 
         public CustomPagerAdapter(FragmentManager fm) {
             super(fm);
-            //使用这种方式我发现无法加载
+            //使用这种方式我发现只能在Android 4.4 及其以后版本才能使用
             //fragments.add(Fragment.instantiate(MainActivity.this, RSBlurFragment.class.getName()));
             fragments.add(Fragment.instantiate(MainActivity.this, FastBlurFragment.class.getName()));
             fragments.add(Fragment.instantiate(MainActivity.this, JniBlurArrayFragment.class.getName()));
