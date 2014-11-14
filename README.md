@@ -18,16 +18,16 @@ Android 中通过 Java 与 JNI 分别进行图片模糊；并且进行比较其�
 ## Screenshots
 
 ##### RenderScript
-![Themes][1]
+<img src="images/001.jpg"/>
 
 ##### Fast Blur
-![Themes][2]
+<img src="images/002.jpg"/>
 
 ##### JniArray
-![Themes][3]
+<img src="images/003.jpg"/>
 
 ##### JniBitMap
-![Themes][4]
+<img src="images/004.jpg"/>
 
 
 ## 四种方式
@@ -106,8 +106,3 @@ License
     See the License for the specific language governing permissions and
     limitations under the License.
 
-
- [1]: https://raw2.github.com/qiujuer/ImageBlurring/master/images/001.jpg
- [2]: https://raw2.github.com/qiujuer/ImageBlurring/master/images/002.jpg
- [3]: https://raw2.github.com/qiujuer/ImageBlurring/master/images/003.jpg
- [4]: https://raw2.github.com/qiujuer/ImageBlurring/master/images/004.jpg
