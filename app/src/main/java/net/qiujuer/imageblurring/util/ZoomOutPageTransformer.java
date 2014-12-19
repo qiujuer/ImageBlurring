@@ -1,4 +1,4 @@
-package com.accumulation.imageblurring.app.util;
+package net.qiujuer.imageblurring.util;
 
 import android.support.v4.view.ViewPager;
 import android.view.View;

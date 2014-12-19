@@ -12,22 +12,22 @@ Android 中通过 Java 与 JNI 分别进行图片模糊；并且进行比较其�
 
 ## 备注消息
 
-后期优化将会集成到项目：[Genius-Android](https://github.com/qiujuer/Genius-Android.git)
+已集成到新项目：[Genius-Android](https://github.com/qiujuer/Genius-Android.git)
 
 
 ## Screenshots
 
 ##### RenderScript
-<img src="images/001.jpg"/>
+![RenderScript](images/001.jpg)
 
 ##### Fast Blur
-<img src="images/002.jpg"/>
+![Fast Blur](images/002.jpg)
 
 ##### JniArray
-<img src="images/003.jpg"/>
+![JniArray](images/003.jpg)
 
 ##### JniBitMap
-<img src="images/004.jpg"/>
+![JniBitMap](images/004.jpg)
 
 
 ## 四种方式

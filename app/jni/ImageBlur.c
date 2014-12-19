@@ -2,7 +2,7 @@
 Copyright:  Copyright QIUJUER 2013.
 Author:		Qiujuer
 Date:		2014-04-18
-Description:ÊµÏÖÍ¼Æ¬Ä£ºı´¦Àí
+Description:å®ç°å›¾ç‰‡æ¨¡ç³Šå¤„ç†
 **************************************************/
 #include<malloc.h>
 
@@ -11,14 +11,14 @@ Description:ÊµÏÖÍ¼Æ¬Ä£ºı´¦Àí
 #define MIN(a,b) ((a)<(b)?(a):(b))
 
 /*************************************************
-Function:		StackBlur(¶ÑÕ»Ä£ºı)
-Description:    Ê¹ÓÃ¶ÑÕ»·½Ê½½øĞĞÍ¼Æ¬ÏñËØÄ£ºı´¦Àí
+Function:		StackBlur(å †æ ˆæ¨¡ç³Š)
+Description:    ä½¿ç”¨å †æ ˆæ–¹å¼è¿›è¡Œå›¾ç‰‡åƒç´ æ¨¡ç³Šå¤„ç†
 Calls:          malloc
 Table Accessed: NULL
 Table Updated:	NULL
-Input:          ÏñËØµã¼¯ºÏ£¬Í¼Æ¬¿í£¬Í¼Æ¬¸ß£¬Ä£ºı°ë¾¶
-Output:         ·µ»ØÄ£ºıºóµÄÏñËØµã¼¯ºÏ
-Return:         ·µ»ØÄ£ºıºóµÄÏñËØµã¼¯ºÏ
+Input:          åƒç´ ç‚¹é›†åˆï¼Œå›¾ç‰‡å®½ï¼Œå›¾ç‰‡é«˜ï¼Œæ¨¡ç³ŠåŠå¾„
+Output:         è¿”å›æ¨¡ç³Šåçš„åƒç´ ç‚¹é›†åˆ
+Return:         è¿”å›æ¨¡ç³Šåçš„åƒç´ ç‚¹é›†åˆ
 Others:         NULL
 *************************************************/
 static int* StackBlur(int* pix, int w, int h, int radius) {

@@ -1,8 +1,8 @@
-package com.accumulation.imageblurring.app.util;
+package net.qiujuer.imageblurring.util;
 
 import android.graphics.Bitmap;
 
-import com.accumulation.imageblurring.app.jni.ImageBlur;
+import net.qiujuer.imageblurring.jni.ImageBlur;
 
 /**
  * Created by QIUJUER on 2014/4/19.

@@ -1,9 +1,10 @@
-package com.accumulation.imageblurring.app.jni;
+package net.qiujuer.imageblurring.jni;
 
 import android.graphics.Bitmap;
 
 /**
- * Created by QIUJUER on 2014/4/19.
+ * Created by Qiujuer
+ * on 2014/4/19.
  */
 public class ImageBlur {
     public static native void blurIntArray(int[] pImg, int w, int h, int r);
@@ -11,6 +12,6 @@ public class ImageBlur {
     public static native void blurBitMap(Bitmap bitmap, int r);
 
     static {
-        System.loadLibrary("JNI_ImageBlur");
+        System.loadLibrary("ImageBlur");
     }
 }

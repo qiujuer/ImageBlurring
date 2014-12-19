@@ -1,4 +1,4 @@
-package com.accumulation.imageblurring.app;
+package net.qiujuer.imageblurring;
 
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
@@ -9,10 +9,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 
-import com.accumulation.imageblurring.app.fragments.FastBlurFragment;
-import com.accumulation.imageblurring.app.fragments.JniBlurArrayFragment;
-import com.accumulation.imageblurring.app.fragments.JniBlurBitMapFragment;
-import com.accumulation.imageblurring.app.util.ZoomOutPageTransformer;
+import net.qiujuer.imageblurring.fragments.FastBlurFragment;
+import net.qiujuer.imageblurring.fragments.JniBlurArrayFragment;
+import net.qiujuer.imageblurring.fragments.JniBlurBitMapFragment;
+import net.qiujuer.imageblurring.util.ZoomOutPageTransformer;
 
 import java.util.ArrayList;
 
@@ -27,8 +27,7 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         pagerAdapter =
-                new CustomPagerAdapter(
-                        getSupportFragmentManager());
+                new CustomPagerAdapter(getSupportFragmentManager());
         viewPager = (ViewPager) findViewById(R.id.pager);
         viewPager.setAdapter(pagerAdapter);
         viewPager.setPageTransformer(true, new ZoomOutPageTransformer());

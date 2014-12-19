@@ -1,10 +1,10 @@
-#include <com_accumulation_imageblurring_app_jni_ImageBlur.h>
+#include <net_qiujuer_imageblurring_jni_ImageBlur.h>
 #include <ImageBlur.c>
 #include <android/log.h>
 #include <android/bitmap.h>
 
 
-JNIEXPORT void JNICALL Java_com_accumulation_imageblurring_app_jni_ImageBlur_blurIntArray
+JNIEXPORT void JNICALL Java_net_qiujuer_imageblurring_jni_ImageBlur_blurIntArray
 (JNIEnv *env, jclass obj, jintArray arrIn, jint w, jint h, jint r)
 {
 	jint *pix;
@@ -21,7 +21,7 @@ JNIEXPORT void JNICALL Java_com_accumulation_imageblurring_app_jni_ImageBlur_blu
 	//return result;
 }
 
-JNIEXPORT void JNICALL Java_com_accumulation_imageblurring_app_jni_ImageBlur_blurBitMap
+JNIEXPORT void JNICALL Java_net_qiujuer_imageblurring_jni_ImageBlur_blurBitMap
 (JNIEnv *env, jclass obj, jobject bitmapIn, jint r)
 {
 	AndroidBitmapInfo infoIn;

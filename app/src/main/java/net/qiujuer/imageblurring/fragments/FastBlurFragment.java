@@ -1,4 +1,5 @@
-package com.accumulation.imageblurring.app.fragments;
+package net.qiujuer.imageblurring.fragments;
+
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -16,13 +17,13 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.accumulation.imageblurring.app.R;
-import com.accumulation.imageblurring.app.util.FastBlur;
+import net.qiujuer.imageblurring.R;
+import net.qiujuer.imageblurring.util.FastBlur;
 
 /**
  * Created by QIUJUER on 2014/4/19.
  */
-public class JniBlurBitMapFragment extends Fragment {
+public class FastBlurFragment extends Fragment {
     private final String DOWNSCALE_FILTER = "downscale_filter";
 
     private ImageView image;
@@ -78,14 +79,14 @@ public class JniBlurBitMapFragment extends Fragment {
         paint.setFlags(Paint.FILTER_BITMAP_FLAG);
         canvas.drawBitmap(bkg, 0, 0, paint);
 
-        overlay = FastBlur.doBlurJniBitMap(overlay, (int) radius, true);
+        overlay = FastBlur.doBlur(overlay, (int) radius, true);
         view.setBackground(new BitmapDrawable(getResources(), overlay));
         statusText.setText(System.currentTimeMillis() - startMs + "ms");
     }
 
     @Override
     public String toString() {
-        return "JniBitMap";
+        return "Fast blur";
     }
 
     private void addCheckBoxes(ViewGroup container) {
