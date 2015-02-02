@@ -1,7 +1,14 @@
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ImageBlurring-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1464)
+
+
 ImageBlurring
 =============
 
 Android 中通过 Java 与 JNI 分别进行图片模糊；并且进行比较其运算速度。
+
+
+## Thanks
+[blurring](https://github.com/paveldudka/blurring)
 
 
 ## 相关文章
