@@ -1,9 +1,11 @@
 package net.qiujuer.imageblurring.fragments;
 
+import android.annotation.TargetApi;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -20,11 +22,11 @@ import net.qiujuer.imageblurring.R;
 import net.qiujuer.imageblurring.util.FastBlur;
 
 /**
- * Created by QIUJUER on 2014/4/19.
+ * Created by QIUJUER
+ * on 2014/4/19.
  */
 public class JniBlurBitMapFragment extends Fragment {
     private final String DOWNSCALE_FILTER = "downscale_filter";
-
     private ImageView image;
     private TextView text;
     private CheckBox downScale;
@@ -60,6 +62,7 @@ public class JniBlurBitMapFragment extends Fragment {
         });
     }
 
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     private void blur(Bitmap bkg, View view) {
         long startMs = System.currentTimeMillis();
         float scaleFactor = 1;
@@ -93,7 +96,7 @@ public class JniBlurBitMapFragment extends Fragment {
         downScale = new CheckBox(getActivity());
         FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
         downScale.setLayoutParams(lp);
-        downScale.setText("模糊前压缩图片");
+        downScale.setText(R.string.down_scale);
         downScale.setVisibility(View.VISIBLE);
         downScale.setTextColor(0xFFFFFFFF);
         downScale.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

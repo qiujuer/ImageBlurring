@@ -5,7 +5,8 @@ import android.graphics.Bitmap;
 import net.qiujuer.imageblurring.jni.ImageBlur;
 
 /**
- * Created by QIUJUER on 2014/4/19.
+ * Created by QIUJUER
+ * on 2014/4/19.
  */
 public class FastBlur {
     public static Bitmap doBlurJniArray(Bitmap sentBitmap, int radius, boolean canReuseInBitmap) {
@@ -25,7 +26,7 @@ public class FastBlur {
 
         int[] pix = new int[w * h];
         bitmap.getPixels(pix, 0, w, 0, 0, w, h);
-        //Jni 数组计算
+        //Jni Pixels
         ImageBlur.blurIntArray(pix, w, h, radius);
 
         bitmap.setPixels(pix, 0, w, 0, 0, w, h);

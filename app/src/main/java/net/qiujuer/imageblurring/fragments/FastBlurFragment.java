@@ -21,11 +21,11 @@ import net.qiujuer.imageblurring.R;
 import net.qiujuer.imageblurring.util.FastBlur;
 
 /**
- * Created by QIUJUER on 2014/4/19.
+ * Created by QIUJUER
+ * on 2014/4/19.
  */
 public class FastBlurFragment extends Fragment {
     private final String DOWNSCALE_FILTER = "downscale_filter";
-
     private ImageView image;
     private TextView text;
     private CheckBox downScale;
@@ -43,6 +43,7 @@ public class FastBlurFragment extends Fragment {
         if (savedInstanceState != null) {
             downScale.setChecked(savedInstanceState.getBoolean(DOWNSCALE_FILTER));
         }
+
         applyBlur();
         return view;
     }
@@ -94,7 +95,7 @@ public class FastBlurFragment extends Fragment {
         downScale = new CheckBox(getActivity());
         FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
         downScale.setLayoutParams(lp);
-        downScale.setText("模糊前压缩图片");
+        downScale.setText(R.string.down_scale);
         downScale.setVisibility(View.VISIBLE);
         downScale.setTextColor(0xFFFFFFFF);
         downScale.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

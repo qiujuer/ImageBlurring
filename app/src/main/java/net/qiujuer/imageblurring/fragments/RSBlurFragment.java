@@ -25,9 +25,11 @@ import net.qiujuer.imageblurring.R;
 
 
 /**
- * Created by QIUJUER on 2014/4/19.
+ * Created by QIUJUER
+ * on 2014/4/19.
  */
 public class RSBlurFragment extends Fragment {
+    private final String DOWNSCALE_FILTER = "downscale_filter";
     private ImageView image;
     private TextView text;
     private TextView statusText;
@@ -41,6 +43,11 @@ public class RSBlurFragment extends Fragment {
         image.setImageResource(R.drawable.picture);
         statusText = addStatusText((ViewGroup) view.findViewById(R.id.controls));
         addCheckBoxes((ViewGroup) view.findViewById(R.id.controls));
+
+
+        if (savedInstanceState != null) {
+            downScale.setChecked(savedInstanceState.getBoolean(DOWNSCALE_FILTER));
+        }
         applyBlur();
         return view;
     }
@@ -123,7 +130,7 @@ public class RSBlurFragment extends Fragment {
         downScale = new CheckBox(getActivity());
         ViewGroup.LayoutParams lp = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
         downScale.setLayoutParams(lp);
-        downScale.setText("模糊前压缩图片");
+        downScale.setText(R.string.down_scale);
         downScale.setVisibility(View.VISIBLE);
         downScale.setTextColor(0xFFFFFFFF);
         downScale.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -133,5 +140,11 @@ public class RSBlurFragment extends Fragment {
             }
         });
         container.addView(downScale);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        outState.putBoolean(DOWNSCALE_FILTER, downScale.isChecked());
+        super.onSaveInstanceState(outState);
     }
 }
