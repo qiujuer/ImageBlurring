@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 
+import net.qiujuer.imageblurring.fragments.AnimatorBlurFragment;
 import net.qiujuer.imageblurring.fragments.FastBlurFragment;
 import net.qiujuer.imageblurring.fragments.JniBlurArrayFragment;
 import net.qiujuer.imageblurring.fragments.JniBlurBitMapFragment;
@@ -85,6 +86,7 @@ public class MainActivity extends FragmentActivity {
             fragments.add(Fragment.instantiate(MainActivity.this, FastBlurFragment.class.getName()));
             fragments.add(Fragment.instantiate(MainActivity.this, JniBlurArrayFragment.class.getName()));
             fragments.add(Fragment.instantiate(MainActivity.this, JniBlurBitMapFragment.class.getName()));
+            fragments.add(Fragment.instantiate(MainActivity.this, AnimatorBlurFragment.class.getName()));
         }
 
         @Override
