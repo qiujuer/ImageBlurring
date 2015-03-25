@@ -37,6 +37,9 @@ Android 中通过 Java 与 JNI 分别进行图片模糊；并且进行比较其�
 ##### JniBitMap
 ![JniBitMap](images/004.jpg)
 
+##### Animation
+![Animation](images/005.gif)
+
 
 ## 四种方式
 

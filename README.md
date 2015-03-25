@@ -37,6 +37,9 @@ Has been integrated into the new project: [Genius-Android](https://github.com/qi
 ##### JniBitMap
 ![JniBitMap](images/004.jpg)
 
+##### Animation
+![Animation](images/005.gif)
+
 
 ## Use
 
