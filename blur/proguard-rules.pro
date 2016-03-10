@@ -15,3 +15,14 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+
+-keep public class net.qiujuer.genius.blur.StackBlur
+-keep public class net.qiujuer.genius.blur.StackNative
+
+-keepclassmembers class  net.qiujuer.genius.blur.StackBlur {
+    public *;
+}
+-keepclassmembers class net.qiujuer.genius.blur.StackNative {
+    public *;
+}
