@@ -14,7 +14,12 @@ Android 中通过 Java 与 JNI 分别进行图片模糊；并且进行比较其�
 
 ## 相关文章
 
-> *  [csdn](http://blog.csdn.net/qiujuer/article/details/24282047)
+*  [csdn](http://blog.csdn.net/qiujuer/article/details/24282047)
+
+
+## 演示APK
+
+*  [`BlurApp`](https://github.com/qiujuer/ImageBlurring/raw/master/release/blur-app.apk)
 
 
 ## 备注消息

@@ -14,7 +14,12 @@ Android Blurring Image (Bitmap) By Java And JNI.
 
 ## Article
 
-> *  [csdn](http://blog.csdn.net/qiujuer/article/details/24282047)
+*  [csdn](http://blog.csdn.net/qiujuer/article/details/24282047)
+
+
+## Sample APK
+
+*  [`BlurApp`](https://github.com/qiujuer/ImageBlurring/raw/master/release/blur-app.apk)
 
 
 ## Note
