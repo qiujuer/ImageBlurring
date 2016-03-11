@@ -3,7 +3,7 @@
  * WebSite http://www.qiujuer.net
  * Created 05/28/2015
  * Changed 1/10/2016
- * Version 1.0.0
+ * Version 2.0.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,8 +26,8 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode 20
+        versionName "2.0"
 
         ndk {
             moduleName "genius_blur"
