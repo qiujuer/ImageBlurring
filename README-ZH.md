@@ -98,7 +98,7 @@ Android 中通过 Java 与 JNI 分别进行图片模糊；并且进行比较其�
 License
 --------
 
-    Copyright 2014 CengaLabs.
+    Copyright 2014-2016 Qiujuer.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
