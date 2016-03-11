@@ -24,9 +24,6 @@ Has been integrated into the new project: [Genius-Android](https://github.com/qi
 
 ## Screenshots
 
-##### NONE
-![RenderScript](images/none.jpg)
-
 ##### BLUR
 ![RenderScript](images/blur.jpg)
 

@@ -24,9 +24,6 @@ Android 中通过 Java 与 JNI 分别进行图片模糊；并且进行比较其�
 
 ## Screenshots
 
-##### NONE
-![RenderScript](images/none.jpg)
-
 ##### BLUR
 ![RenderScript](images/blur.jpg)
 
