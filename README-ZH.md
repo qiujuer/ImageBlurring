@@ -15,7 +15,6 @@ Android 中通过 Java 与 JNI 分别进行图片模糊；并且进行比较其�
 ## 相关文章
 
 > *  [csdn](http://blog.csdn.net/qiujuer/article/details/24282047)
-> *  [oschina](http://www.oschina.net/question/1377710_151988)
 
 
 ## 备注消息
@@ -25,20 +24,14 @@ Android 中通过 Java 与 JNI 分别进行图片模糊；并且进行比较其�
 
 ## Screenshots
 
-##### RenderScript
-![RenderScript](images/001.jpg)
+##### NONE
+![RenderScript](images/none.jpg)
 
-##### Fast Blur
-![Fast Blur](images/002.jpg)
-
-##### JniArray
-![JniArray](images/003.jpg)
-
-##### JniBitMap
-![JniBitMap](images/004.jpg)
+##### BLUR
+![RenderScript](images/blur.jpg)
 
 ##### Animation
-![Animation](images/005.gif)
+![Animation](images/anim.gif)
 
 
 ## 四种方式
@@ -67,7 +60,7 @@ Android 中通过 Java 与 JNI 分别进行图片模糊；并且进行比较其�
 
 ## 你需要它
 
-下载本项目,项目可导入到 `Android Studio`，Android Studio >= 1.0.0
+开发项目, 项目导入到 `Android Studio`，`Gradle` version 1.2.3 => gradle.2.8
 
 项目里边含有一个实例项目，项目中有 JNI 的源码实现，以及 JNI 的生成文件。
 

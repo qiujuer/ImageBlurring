@@ -12,10 +12,9 @@ Android Blurring Image (Bitmap) By Java And JNI.
 [blurring](https://github.com/paveldudka/blurring)
 
 
-## About Article
+## Article
 
 > *  [csdn](http://blog.csdn.net/qiujuer/article/details/24282047)
-> *  [oschina](http://www.oschina.net/question/1377710_151988)
 
 
 ## Note
@@ -25,20 +24,14 @@ Has been integrated into the new project: [Genius-Android](https://github.com/qi
 
 ## Screenshots
 
-##### RenderScript
-![RenderScript](images/001.jpg)
+##### NONE
+![RenderScript](images/none.jpg)
 
-##### Fast Blur
-![Fast Blur](images/002.jpg)
-
-##### JniArray
-![JniArray](images/003.jpg)
-
-##### JniBitMap
-![JniBitMap](images/004.jpg)
+##### BLUR
+![RenderScript](images/blur.jpg)
 
 ##### Animation
-![Animation](images/005.gif)
+![Animation](images/anim.gif)
 
 
 ## Use
@@ -67,7 +60,7 @@ Has been integrated into the new project: [Genius-Android](https://github.com/qi
 
 ## Need
 
-Download project, if you need import should `Android Studio` >= 1.0.0
+Development project, if you need import should `Gradle` version is 1.2.3 => gradle.2.8
 
 Project inside contain an instance of project, project with JNI source implementation, as well as the JNI generated file.
 
