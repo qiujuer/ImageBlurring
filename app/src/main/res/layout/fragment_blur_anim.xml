@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.qiujuer.sample.blur.frags.JniBitmapFragment">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="@dimen/size_92"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/white_alpha_224"
+        android:textSize="@dimen/lay_28" />
+
+</FrameLayout>
