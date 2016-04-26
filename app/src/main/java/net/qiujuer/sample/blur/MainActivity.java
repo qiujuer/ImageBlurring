@@ -10,7 +10,7 @@ import android.view.ViewTreeObserver;
 
 import net.qiujuer.sample.blur.frags.BaseFragment;
 
-public class BlurActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     BaseFragment mJniPixel;
     BaseFragment mJniBitmap;
     BaseFragment mJava;
@@ -20,7 +20,7 @@ public class BlurActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_blur);
+        setContentView(R.layout.activity_main);
 
         findFragments();
 

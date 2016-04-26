@@ -3,7 +3,7 @@
  * WebSite http://www.qiujuer.net
  * Created 05/28/2015
  * Changed 1/10/2016
- * Version 2.0.0
+ * Version 1.0.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,33 +17,32 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-apply plugin: 'com.android.library'
+apply plugin: 'com.android.model.library'
 
-android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+model {
+    android {
+        compileSdkVersion = 23
+        buildToolsVersion = "23.0.3"
 
-    defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 23
-        versionCode 20
-        versionName "2.0"
+        defaultConfig {
+            minSdkVersion.apiLevel = 15
+            targetSdkVersion.apiLevel = 23
+            versionCode = 200
+            versionName = "2.0.0"
+        }
+
+        buildTypes {
+            release {
+                minifyEnabled = false
+                proguardFiles.add(file('proguard-rules.pro'))
+            }
+        }
 
         ndk {
-            moduleName "genius_blur"
-            cFlags "-DANDROID_NDK -D_RELEASE"
-            ldLibs "m", "log", "jnigraphics"
-            abiFilters "all"
+            moduleName = 'genius_blur'
+            ldLibs.addAll(['m', 'log', 'jnigraphics'])
+            //abiFilters.addAll(['armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'])
+            //cppFlags.addAll(['-DANDROID_NDK', '-D_RELEASE'])
         }
     }
-    buildTypes {
-        release {
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-}
-
-dependencies {
-    testCompile 'junit:junit:4.12'
 }

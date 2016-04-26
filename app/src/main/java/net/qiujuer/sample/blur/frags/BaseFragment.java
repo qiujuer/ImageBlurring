@@ -14,9 +14,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import net.qiujuer.genius.kit.handler.Run;
+import net.qiujuer.genius.kit.handler.runable.Action;
 import net.qiujuer.sample.blur.R;
-
-import static net.qiujuer.genius.kit.util.UiKit.runOnMainThreadAsync;
 
 /**
  * Created by qiujuer
@@ -86,9 +86,9 @@ public abstract class BaseFragment extends Fragment implements View.OnClickListe
     protected void show(final Bitmap bitmap, final long time) {
         final View view = getView();
         if (view != null) {
-            runOnMainThreadAsync(new Runnable() {
+            Run.onUiAsync(new Action() {
                 @Override
-                public void run() {
+                public void call() {
                     view.setBackground(new BitmapDrawable(getResources(), bitmap));
                     show(time);
                 }

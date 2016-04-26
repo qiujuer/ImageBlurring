@@ -16,7 +16,6 @@
 #   public *;
 #}
 
-
 -keep public class net.qiujuer.genius.blur.StackBlur
 -keep public class net.qiujuer.genius.blur.StackNative
 
