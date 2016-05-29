@@ -1,9 +1,9 @@
 /*
- * Copyright (C) 2016 Qiujuer <qiujuer@live.cn>
+ * Copyright (C) 2014-2016 Qiujuer <qiujuer@live.cn>
  * WebSite http://www.qiujuer.net
  * Created 04/28/2015
- * Changed 1/10/2016
- * Version 1.0.0
+ * Changed 05/29/2016
+ * Version 2.0.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,19 +23,14 @@
 
 JNIEXPORT jint
 JNI_OnLoad(JavaVM
-* vm,
-void *reserved
-)
-{
-JNIEnv *env = NULL;
-jint result = -1;
+           *vm,
+           void *reserved) {
+    JNIEnv *env = NULL;
+    jint result = -1;
 
-if ((*vm)->
-GetEnv(vm, (
-void**)&env, JNI_VERSION_1_4) != JNI_OK)
-return -1;
+    if ((*vm)->GetEnv(vm, (void **) &env, JNI_VERSION_1_4) != JNI_OK)
+        return -1;
 
-result = JNI_VERSION_1_4;
-return
-result;
+    result = JNI_VERSION_1_4;
+    return result;
 }

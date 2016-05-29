@@ -13,9 +13,9 @@ extern "C" {
  * Signature: ([IIII)V
  */
 JNIEXPORT void JNICALL
-Java_net_qiujuer_genius_blur_StackNative_blurPixels
-(JNIEnv
-*, jclass, jintArray, jint, jint, jint);
+        Java_net_qiujuer_genius_blur_StackNative_blurPixels
+        (JNIEnv
+         *, jclass, jintArray, jint, jint, jint);
 
 /*
  * Class:     net_qiujuer_genius_blur_StackNative
@@ -23,9 +23,9 @@ Java_net_qiujuer_genius_blur_StackNative_blurPixels
  * Signature: (Landroid/graphics/Bitmap;I)V
  */
 JNIEXPORT void JNICALL
-Java_net_qiujuer_genius_blur_StackNative_blurBitmap
-(JNIEnv
-*, jclass, jobject, jint);
+        Java_net_qiujuer_genius_blur_StackNative_blurBitmap
+        (JNIEnv
+         *, jclass, jobject, jint);
 
 #ifdef __cplusplus
 }
